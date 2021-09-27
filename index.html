@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Travel Budget</title>
+        <link href="./style.css" type= 'text/css' rel='stylesheet'>
+      </head>
+      <body>
+        <div class='container'>
+              <div>
+                  <h1>Travel Budget</h1>
+              </div>
+          <div class='form-section'>
+              <form class='form'>
+              <div>
+                  <div class="fields">
+                      <input type='text' id='destiny-input' class='destiny' required>
+                      <label for="destiny-input">Destiny</label>
+                 </div>
+                 <div class="fields">
+                      <input type='text' id='budget-input' class='budget' required pattern="[0-9]{2,6}">
+                      <label for="budget-input">Budget</label>
+                 </div>
+                 <div class="fields">            
+                      <input type='text' id='accomodation-input' class='accomodation' required pattern="[0-9]{2,6}">
+                      <label for="accomodation-input">Accomodation</label>
+                 </div>    
+                 <div class="fields">
+                      <input type='text' id='transport-input' class='transport' required pattern="[0-9]{2,6}">
+                      <label for="transport-input">Transport</label>
+                 </div>
+                 <div class="fields">
+                      <input type='text' id='food-input' class='food' required pattern="[0-9]{2,6}">
+                      <label for="food-input">Food</label>
+                 </div>
+                 <div class="fields">
+                      <input type='text' id='shopping-input' class='shopping' required pattern="[0-9]{2,6}">
+                      <label for="shopping-input">Shopping</label>
+                 </div>
+                 <div>
+                      <button type='submit' class='button'>Calculate</button>
+                 </div>
+              </div>
+              </form>
+          </div>
+          <div class='image-section'>
+              <div>
+                 <img class='img' src='./airplane.png'>
+                 <p class='airplane-p'></p>
+              </div>
+              <div>
+                 <img  class='img' src='./wallet.png'>
+                 <p class='wallet-p'></p>
+              </div>
+              <div>
+                 <img class='third-img' src='./dollar.png'>
+                 <p class='dollar-p'></p>
+              </div>
+          </div>
+        </div>  
+        <script src='./app.js'></script>
+      </body>
+  </html>        
